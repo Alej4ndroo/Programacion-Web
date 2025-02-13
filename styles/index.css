@@ -1,6 +1,150 @@
+/* index.css */
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap');
 body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: rgb(52, 154, 220);
+    font-family: 'Playfair Display', serif;
+}
+
+.bg-gray-100 {
+    background-color: #f7fafc;
+}
+
+.bg-gray-200 {
+    background-color: #edf2f7;
+}
+
+.text-white {
+    color: white;
+}
+
+.text-black {
+    color: black;
+}
+
+.text-xl {
+    font-size: 1.25rem;
+}
+
+.text-2xl {
+    font-size: 1.5rem;
+}
+
+.text-6xl {
+    font-size: 3.75rem;
+}
+
+.font-bold {
+    font-weight: 700;
+}
+
+.container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.px-4 {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.py-4 {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.mt-4 {
+    margin-top: 1rem;
+}
+
+.rounded {
+    border-radius: 0.375rem;
+}
+
+.flex {
+    display: flex;
+}
+
+.items-center {
+    align-items: center;
+}
+
+.space-x-4 {
+    gap: 1rem;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.relative {
+    position: relative;
+}
+
+.absolute {
+    position: absolute;
+}
+
+.inset-0 {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.grid {
+    display: grid;
+}
+
+.grid-cols-1 {
+    grid-template-columns: repeat(1, 1fr);
+}
+
+.sm\:grid-cols-2 {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.md\:grid-cols-4 {
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.gap-8 {
+    gap: 2rem;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.mb-8 {
+    margin-bottom: 2rem;
+}
+
+.mb-4 {
+    margin-bottom: 1rem;
+}
+
+.mw-200 {
+    max-width: 200px;
+}
+
+.py-2 {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+.px-4 {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.bg-white {
+    background-color: white;
 }
