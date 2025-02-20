@@ -1,89 +1,141 @@
+<!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="utf-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Aleveau</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet"/>
-    <style>
-        body {
-            font-family: 'Playfair Display', serif;
-        }
-    </style>
-</head>
-<body class="bg-gray-100">
-    <header class="bg-gray-200 py-4">
-        <div class="container mx-auto flex justify-between items-center px-4">
-            <div class="flex items-center space-x-4">
-                <button class="text-xl">
-                    <i class="fas fa-bars"></i> Menú
-                </button>
-                <button class="text-xl">
-                    <i class="fas fa-search"></i> Buscar
-                </button>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../styles/index.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+        <title>Aleveau</title>
+    </head>
+    <body>
+        <nav class="navbar">
+            <div class="nav-links">
+                <strong>
+                    <ul>
+                        <div class="first-nav">
+                            <li><a href="#" class="underline-hover"><span class="material-symbols-outlined">menu</span></a></li>
+                            <li><a href="#" class="underline-hover">Menú</a></li>
+                            <li><a href="#" class="underline-hover"><span class="material-symbols-outlined">search</span></a></li>
+                            <li><a href="#" class="underline-hover">Buscar</a></li>
+                        </div>
+                        <li><a href="/html/index.html" id="nav-title" class="nav-text"></a></li>
+                        <div class="second-nav">
+                            <li><a href="#" class="underline-hover">Llámenos</a></li>
+                            <li><a href="#" class="underline-hover"><span class="material-symbols-outlined">favorite</span></a></li>
+                            <li><a href="#" class="underline-hover"><span class="material-symbols-outlined">person</span></a></li>
+                            <li>
+                                <a href="show_window.html" class="underline-hover bag-icon">
+                                    <span class="material-symbols-outlined">shopping_bag</span>
+                                    <span class="cart-count">3</span>
+                                </a>
+                            </li>
+                        </div>
+                    </ul>
+                </strong>
             </div>
-            <h1 class="text-2xl font-bold">Aleveau</h1>
-            <div class="flex items-center space-x-4">
-                <button class="text-xl">
-                    Llámenos
-                </button>
-                <button class="text-xl">
-                    <i class="fas fa-heart"></i>
-                </button>
-                <button class="text-xl">
-                    <i class="fas fa-user"></i>
-                </button>
-                <button class="text-xl">
-                    <i class="fas fa-shopping-cart"></i>
-                </button>
-            </div>
-        </div>
-    </header>
+        </nav>
 
-    <main class="relative">
-        <img src="C:\Users\alexl\OneDrive\Documentos\Programacion-Web\menu.jpg" alt="A man and a woman sitting on a bed, with the woman wearing a red outfit and the man wearing a green outfit" class="w-full h-auto"/>
-        <div class="absolute inset-0 flex flex-col items-center justify-center text-white">
-            <h1 class="text-6xl font-bold">Aleveau</h1>
-            <div class="mt-4 flex space-x-4">
-                <button class="bg-white text-black py-2 px-4 rounded">Para Ella</button>
-                <button class="bg-white text-black py-2 px-4 rounded">Para Él</button>
+        <section class="header-content" id="inicio">
+            <div class="header-content-texto">
+                <h1 class="main-text">Aleveau</h1>
             </div>
-        </div>
-    </main>
+            <div class="botons">
+                <button id="button-header">Para Ella</button>
+                <button id="button-header2">Para Él</button>
+            </div>
+        </section>
 
-    <main class="container mx-auto px-4 py-8">
-        <div class="text-center mb-8">
-            <h2 class="text-2xl font-bold">
-                UNA SELECCIÓN DE LA FIRMA
-            </h2>
-        </div>
-        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
-            <div class="text-center">
-                <img alt="Versace Eau de Parfum bottle" class="mx-auto mb-4" height="300" src="https://storage.googleapis.com/a1aa/image/1_yVbH2QGtdi79VzO4AhlEywqhsfQLL1Z8i576C_1gE.jpg" width="200"/>
-                <p class="text-lg">
-                    Amaderado
+        <section class="items-selection"> 
+            <h1>UNA SELECCIÓN DE LA FIRMA</h1>
+            <div class="container-best-items">
+                <a href="amaderado.html" class="container-best-items-item">
+                    <img src="https://ss701.liverpool.com.mx/xl/1106688890.jpg" alt="Imagen 1">
+                    <p>Amaderado</p>
+                </a>
+                <a href="link2.html" class="container-best-items-item">
+                    <img src="https://arome.mx/cdn/shop/files/perfume-acqua-di-gio-para-hombre-de-giorgio-armani-edt-100ml-y-200ml-arome-mexico-3.jpg?v=1725550833" alt="Imagen 1">
+                    <p>Frutal</p>
+                </a>
+                <a href="link3.html" class="container-best-items-item">
+                    <img src="https://ss701.liverpool.com.mx/xl/1135832983.jpg" alt="Imagen 1">
+                    <p>Cítrico</p>
+                </a>
+                <a href="link4.html" class="container-best-items-item">
+                    <img src="https://www.sephora.com.mx/on/demandware.static/-/Sites-masterCatalog_Sephora/es_MX/dw7f589b0b/images/hi-res/boletos/Jazmin/VALENTINO/Fragancia-UomoBiromaEDT-3614272761469-A.jpg" alt="Imagen 1">
+                    <p>Verde</p>
+                </a>
+            </div>
+        </section>
+        
+
+        <section class="second-section">
+            <img src="https://media.glamour.mx/photos/62e2ab5bd72fa6026c41bca6/16:9/w_2560%2Cc_limit/perfumes_ingleses_mas_iconicos_de_todos_los_tiempos.jpg" alt>
+            <div class="second-section-text">
+                <p>
+                    El perfume es mucho más que una simple fragancia; es una
+                    expresión de personalidad, estilo y emociones. Su uso no
+                    solo mejora la percepción personal, sino que también influye
+                    en la confianza y la impresión que dejamos en los demás.
                 </p>
             </div>
-            <div class="text-center">
-                <img alt="Acqua di Gio Giorgio Armani bottle" class="mx-auto mb-4" height="300" src="https://storage.googleapis.com/a1aa/image/W3whDxIlw47qIImBnWQ8Y7-cSoW8DZLtag7QNMY6edE.jpg" width="200"/>
-                <p class="text-lg">
-                    Frutal
-                </p>
+        </section>
+
+        <section class="services">
+            <h1>SERVICIOS ALEVEAU</h1>
+            <div class="videos-section">
+                <div class="video-section-section">
+                    <video src="https://vod.freecaster.com/louisvuitton/9dd34190-3533-4f31-99e6-8d2da2348fd3/jiYqrV0WZb7i6ZMBHRzyZYQ4_21.mp4" autoplay loop muted></video>
+                    <div class="video-section-section-text">
+                        <h2>Colaboraciones</h2>
+                        <p>Asóciate con las marcas más exclusivas y forma parte
+                            de ediciones limitadas y experiencias únicas en el
+                            mundo de la perfumería de lujo.</p>
+                    </div>
+                    <a href="#">Realiza una colaboración</a>
+                </div>
+                <div class="video-section-section">
+                    <video src="https://vod.freecaster.com/louisvuitton/9c2989f9-74ea-4cd9-b791-a0119186c9fa/OR21gmv0LV_24.mp4" autoplay loop muted></video>
+                    <div class="video-section-section-text">
+                        <h2>Personalización</h2>
+                        <p>Crea una fragancia que refleje tu esencia. Con
+                            nuestra personalización exclusiva, puedes ajustar
+                            cada nota aromática a tu estilo y preferencias.</p>
+                    </div>
+                    <a href="#">Descubre como hacerlo</a>
+                </div>
+                <div class="video-section-section">
+                    <video src="https://vod.freecaster.com/louisvuitton/9c2a3aa3-ffe1-4c2c-a622-c88dbc9f578f/cFtRKvygsO_24.mp4" autoplay loop muted></video>
+                    <div class="video-section-section-text">
+                        <h2>Viajes Exclusivos</h2>
+                        <p>Disfruta de experiencias inolvidables con nuestros
+                            viajes exclusivos para miembros. Descubre destinos
+                            exóticos y sumérgete en el arte de la
+                            perfumería.</p>
+                    </div>
+                    <a href="#">Hazte miembro</a>
+                </div>
             </div>
-            <div class="text-center">
-                <img alt="Citrus perfume bottle" class="mx-auto mb-4" height="300" src="https://storage.googleapis.com/a1aa/image/ivbbpc8SXIz39Tf887AOcaBQ76IX7d8kjqxUOni1eEc.jpg" width="200"/>
-                <p class="text-lg">
-                    Cítrico
-                </p>
+        </section>
+
+        <footer class="footer">
+            <img src="../images/logo-removebg-preview.png" alt>
+            <p class="footer-description">Descubre nuestras fragancias
+                exclusivas para ti. Con más de 10 años en el mercado,
+                nos enorgullece ofrecer la mejor selección de
+                perfumes.</p>
+            <div class="social-links">
+                <a href="#" target="_blank">Facebook</a>
+                <a href="#" target="_blank">Instagram</a>
+                <a href="#" target="_blank">Twitter</a>
+                <a href="#" target="_blank">Pinterest</a>
             </div>
-            <div class="text-center">
-                <img alt="Valentino perfume bottle" class="mx-auto mb-4" height="300" src="https://storage.googleapis.com/a1aa/image/K2zlJnI_oUxGPLeW3lAIbOfTZZR_XS5f_fOfoLxhPog.jpg" width="200"/>
-                <p class="text-lg">
-                    Verde
-                </p>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Aleveau. Todos los
+                    derechos reservados.</p>
+                <p><a href="#">Política de privacidad</a> | <a href="#">Términos de servicio</a></p>
             </div>
-        </div>
-    </main>
-</body>
+        </footer>
+
+        <script src="../script.js"></script>
+    </body>
 </html>
